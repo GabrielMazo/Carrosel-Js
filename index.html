@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+    <html lang="pt-BR">
+        <head>
+            <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Carrossel de Imagens</title>
+            
+            <!-- Estilização geral -->
+            
+            <link rel="stylesheet" type="text/css" href="css/style.css">
+        </head>
+
+        <body>
+
+            <main>
+                    
+                <!-- Inicio do Slider -->
+
+                <section class="slider">
+                    
+                    <!-- Primeiro Slide -->
+
+                    <div class="slide" style=" display: block;">
+                        <img src="img/img01.jpg">
+                    </div>
+                    
+                    <!-- Segundo Slide -->
+
+                    <div class="slide">
+                        <img src="img/img02.jpg">
+                    </div>
+                    
+                    <!-- Terceiro Slide -->
+
+                    <div class="slide">
+                        <img src="img/img03.jpg">
+                    </div>
+                    
+                    <!-- Botões Avançar Retroceder -->
+                    
+                    <div class="btns">
+                        <a class="prev" onclick="adicSlide(-1)">&#10094;</a>
+                        <a class="next" onclick="adicSlide(1)">&#10095;</a>
+                    </div>
+                    
+                    <!-- Botões circulares -->
+                    
+                    <div class="dotbox">
+                        <div class="dot d1" onclick="slideAtual(1)"></div>
+                        <div class="dot d2" onclick="slideAtual(2)"></div>
+                        <div class="dot d3" onclick="slideAtual(3)"></div>
+                    </div>
+
+                </section>
+
+                <!-- Fim do Slider -->
+            </main>
+
+            <!-- Script de controle geral -->
+
+            <script src="js/main.js"></script>
+        </body>
+
+    </html>
